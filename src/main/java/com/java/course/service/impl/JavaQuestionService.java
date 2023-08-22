@@ -5,9 +5,10 @@ import com.java.course.exceptions.QuestionNotFoundException;
 import com.java.course.exceptions.StorageIsEmpty;
 import com.java.course.model.Question;
 import com.java.course.service.QuestionService;
-
+import org.springframework.stereotype.Service;
 import java.util.*;
 
+@Service
 public class JavaQuestionService implements QuestionService {
 
     private final Set<Question> questions = new HashSet<>();
